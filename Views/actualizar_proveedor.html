@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+
+<head>
+    <title>Actualizar Proveedor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+       body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://www.pabisretail.com/wp-content/uploads/2022/06/Gestion-del-inventario.jpg');
+    background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+        h2 {
+            color: #181939;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        textarea,
+        input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background: #3E7EFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background: #c92e79;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        h2 {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="../controllers/actualizar_proveedor.php" method="post">
+        <h2>Actualizar Proveedor</h2><br>
+
+        <label for="buscar_proveedor">Buscar Proveedor:</label>
+        <input type="search" name="buscar_proveedor" id="buscar_proveedor" required>
+        <input type="submit" value="Buscar">
+        <br>
+        <br>
+        <label for="nombre">Nombre del Proveedor:</label>
+        <input type="text" name="nombre" id="nombre" required><br>
+
+        <label for="nombre">Representante legal:</label>
+        <input type="text" name="nombre" id="nombre" required><br>
+
+        <label for="razon_social">Nit o Identificación:</label>
+        <input type="number" name="razon_social" id="razon_social" required><br>
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" name="direccion" id="direccion" required><br>
+
+        <label for="direccion">Ciudad:</label>
+        <input type="text" name="direccion" id="direccion" required><br>
+
+        <label for="telefono">Número de Teléfono:</label>
+        <input type="number" name="telefono" id="telefono" required><br>
+
+        <label for="telefono">Número de celular:</label>
+        <input type="number" name="telefono" id="telefono" required><br>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" name="email" id="email" required><br><br>
+
+        <input type="submit" value="Actualizar Proveedor">
+    </form>
+    <div class="button-container">
+        <button onclick="window.history.back()" class="btn btn-secondary">Atrás</button>
+    </div>
+</body>
+</html>
